@@ -1,0 +1,100 @@
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  /* height: 350px; not needed as we add input elements the container grows in height*/
+  background-color: #2c364c;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .form-container {
+    width: 450px;
+    flex-shrink: 0;
+    padding: 64px 48px 64px 48px;
+  }
+}
+
+.login-website-logo {
+  width: 90px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-website-logo {
+    width: 100px;
+  }
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+.input-label {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 2px;
+  line-height: 16px;
+}
+.input-username {
+  font-size: 15px;
+  height: 40px;
+  border: 1px solid #6366f1;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+}
+.input-password {
+  font-size: 15px;
+  height: 40px;
+  border: 1px solid #6366f1;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+}
+.button {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background-color: #4f46e5;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.error {
+  align-self: start;
+  font-size: 12px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-family: roboto;
+  line-height: 16px;
+  color: red;
+}
